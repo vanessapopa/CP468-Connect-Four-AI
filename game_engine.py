@@ -65,7 +65,7 @@ def check_win(board, player):
 
     # HORIZONTAL CHECK
     for row in range(ROWS):
-        for col in range(COLS - 3):
+        for col in range(COLUMNS - 3):
 
             if (
                 board[row][col] == player and
