@@ -2,20 +2,20 @@
 
 A Python implementation of Connect Four featuring three agents of increasing intelligence:
 
-- **Random Agent** — chooses uniformly from all legal moves.
-- **Rule-Based Agent** — follows prioritized tactical rules.
-- **Minimax Agent** — searches future game states using depth-limited Minimax and a heuristic evaluation function.
+- **Random Agent** - chooses uniformly from all legal moves.
+- **Rule-Based Agent** - follows prioritized tactical rules.
+- **Minimax Agent** - searches future game states using depth-limited Minimax and a heuristic evaluation function.
 
 
 ## Features
 
-- Standard 7-column × 6-row Connect Four board
-- Correct gravity-based move execution
+- Standard 7 column × 6 row Connect Four board
+- Correct gravity based move execution
 - Horizontal, vertical, and diagonal win detection
-- Draw and terminal-state detection
-- Human-vs-human, human-vs-AI, and AI-vs-AI play
+- Draw and terminal state detection
+- Human vs human, human vs AI, and AI vs AI play
 - Configurable Minimax search depth
-- Reproducible head-to-head experiments using a fixed random seed
+- Reproducible head to head experiments using a fixed random seed
 - CSV export of win rates, draw rates, and average decision times
 
 ## Requirements
@@ -29,10 +29,10 @@ A Python implementation of Connect Four featuring three agents of increasing int
 CP468-Connect-Four-AI/
 ├── game_engine.py       # Board representation and shared game rules
 ├── random_agent.py      # Uniformly random baseline agent
-├── rule_agent.py        # Prioritized rule-based agent
+├── rule_agent.py        # Prioritized rule based agent
 ├── minimax_agent.py     # Minimax search and heuristic evaluation
-├── main.py              # Command-line game interface
-├── experiments.py       # Required AI-vs-AI experimental evaluation
+├── main.py              # Command line game interface
+├── experiments.py       # Required AI vs AI experimental evaluation
 ├── test_engine.py       # Basic engine test script
 └── README.md            # Project documentation
 ```
@@ -48,7 +48,7 @@ cd CP468-Connect-Four-AI
 
 ## Running the Game
 
-Run the command-line interface:
+Run the command line interface:
 
 ```bash
 python main.py
@@ -60,7 +60,7 @@ On Windows, this command can also be used:
 py main.py
 ```
 
-The menu allows each side to be configured as:
+The menu allows each side to be selected as:
 
 1. Human
 2. Random Agent
@@ -69,15 +69,15 @@ The menu allows each side to be configured as:
 
 Board symbols:
 
-- `X` — Player 1
-- `O` — Player 2
-- `.` — Empty position
+- `X` - Player 1
+- `O` - Player 2
+- `.` - Empty position
 
 Columns are entered using the numbers `1` through `7`.
 
 ## Running the Engine Test
 
-Run the basic board and move-execution test:
+Run the basic board and move execution test:
 
 ```bash
 python test_engine.py
@@ -101,7 +101,7 @@ The required experiments can be run with:
 python experiments.py --seed 468 --games 30 --depth 4
 ```
 
-The default values are already seed `468`, 30 games per pairing, and Minimax depth `4`, so this shorter command produces with the same set up:
+The default values are seed `468`, 30 games per pairing, and Minimax depth `4`, this shorter command produces using the same set up:
 
 ```bash
 python experiments.py
@@ -121,22 +121,22 @@ python experiments.py --output results_seed_468.csv
 
 ## Game Engine
 
-The board is represented by a two-dimensional Python list:
+The board is represented by a two dimensional Python list:
 
-- `0` — empty cell
-- `1` — Player 1
-- `2` — Player 2
+- `0` - empty cell
+- `1` - Player 1
+- `2` - Player 2
 
 The shared game engine exposes:
 
-- `create_board()` — creates an empty 6 × 7 board
-- `print_board(board)` — prints the board
-- `legal_move(board)` — returns all non-full columns
-- `apply_move(board, column, player)` — drops a disc using gravity
-- `check_win(board, player)` — checks all winning directions
-- `winner(board)` — returns the winning player, if there is one
-- `is_draw(board)` — identifies a full board without a winner
-- `is_terminal(board)` — identifies any finished game
+- `create_board()` - creates an empty 6 × 7 board
+- `print_board(board)` - prints the board
+- `legal_move(board)` - returns all non full columns
+- `apply_move(board, column, player)` - drops a disc using gravity
+- `check_win(board, player)` - checks all winning directions
+- `winner(board)` - returns the winning player, if there is one
+- `is_draw(board)` - identifies a full board without a winner
+- `is_terminal(board)` - identifies any finished game
 
 All of the agents use this engine to ensure they follow the same rules.
 
