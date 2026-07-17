@@ -3,10 +3,12 @@ Rule-Based Agent for Connect Four.
 CP468 - Artificial Intelligence
 
 This agent handles:
-- Play a winning move if available
-- Block an opponent's winning move
-- Prefer the center column
-- Prefer moves closest to the center
+- Playing an immediate winning move
+- Blocking an immediate opponent win
+- Preferring the centre column
+- Extending open lines and creating threats
+- Preferring columns closest to the centre
+- Randomly breaking ties between equally ranked moves
 """
 from game_engine import *
 
