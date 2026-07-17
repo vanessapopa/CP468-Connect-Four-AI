@@ -142,4 +142,4 @@ All of the agents use this engine to ensure they follow the same rules.
 
 ## Demonstration Video
 
-**Video:** [Insert demonstration video link]
+**Video:** <video controls src="https://lauriercloud-my.sharepoint.com/:v:/r/personal/popa1395_mylaurier_ca/Documents/Recordings/CP468-20260716_225811-Meeting%20Recording.mp4?csf=1&web=1&e=oFgqU9&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" title="[Insert demonstration video link]"></video>
