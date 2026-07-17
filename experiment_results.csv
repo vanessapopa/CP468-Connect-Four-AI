@@ -1,0 +1,4 @@
+matchup,agent_a,agent_b,agent_a_wins,agent_b_wins,draws,agent_a_win_rate,agent_b_win_rate,draw_rate,avg_time_a_seconds,avg_time_b_seconds
+Random vs Rule-Based,Random,Rule-Based,0,30,0,0.0,1.0,0.0,8.356696161119361e-07,0.00011870146027720973
+Rule-Based vs Minimax,Rule-Based,Minimax,1,27,2,0.03333333333333333,0.9,0.06666666666666667,0.00019152910025976467,0.06078910073128066
+Minimax vs Random,Minimax,Random,30,0,0,1.0,0.0,0.0,0.09566387128440727,2.5780865919773753e-06
